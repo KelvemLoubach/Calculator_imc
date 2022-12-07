@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="Pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <style>
+        .myControl {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            height: 80%;
+        }
+    </style>
+    <script src="app.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Calculadora Imc</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                   <h3 class="text-white align-text-center">kelvem loubach</h3>
+                    
+                </a>
+            </div>
+        </nav>
+    </nav>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-4  ">
+                <div class="mt-5">
+                    <form class="row g-3">
+                        <div class="col-md-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    MULHER
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    HOMEN
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">IDADE</label>
+                            <input type="text" class="form-control" id="age" placeholder="">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">ALTURA (CM) </label>
+                            <input type="text" class="form-control" id="height" placeholder="Ex; 1.75">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">PESO</label>
+                            <input type="text" class="form-control" id="weight" placeholder="Ex; 70.5">
+                        </div>
+
+                        <div class="col-12">
+                            <button onclick="calculate(), showModal()" type="button" class="btn btn-primary">CALCULAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+                <div class="col-8 mt-5 mb-5">
+                <img src="file_adobe_express.svg" class="rounded" alt="imagem-imc-informativa" >
+            
+            </div>
+        </div>
+        <!--Início do modal-->
+        <!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="showModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" >
+        <div class="modal-header" id="color">
+          <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="informations">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+        <!--Fim do modal-->
+    </div>
+    <div class="card text-center bg-dark">
+        <div class="card-header">
+            Featured
+        </div>
+        <div class="card-body text-white">
+            <h5 class="card-title">IMC (Índice de massa corporal)</h5>
+            <p class="card-text">Saúde é algo que faz você achar que agora é a melhor época do ano.</p>
+        </div>
+        <div class="card-footer text-muted">
+            2 days ago
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
